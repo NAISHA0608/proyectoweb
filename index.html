@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iniciar Sesión</title>
+    <link href="./estilos/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>
+            INICIAR SESION
+        </h3>
+    </header>
+  <main>
+        <form action="logica.php" method="POST">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contrasenia" name="contrasenia" required><br>
+            <input type="hidden" name="proceso" value="login">
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <p>¿No tienes una cuenta? <a href="Registro.php">Registrarse</a></p>
+    </main>
+    <footer>
+        © 2024 Todos los derechos reservados.
+    </footer>
+</body>
+</html>
